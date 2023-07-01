@@ -52,6 +52,28 @@ Node head;
         System.out.println(temp+" is deleted");
 
     }
+    void lastdeletenode() {
+        if (head==null)
+        {
+            System.out.println("null");
+        }
+        Node temp =head;
+        Node prev=head;
+        while (temp.next != null) {
+            prev=temp;
+            temp = temp.next;
+        }
+        if(prev!=temp)
+        {
+            prev.next = null;
+            return;
+        }
+        else {head=null;}
+        System.out.println();
+        System.out.println(temp.next.number+" is deleted");
+
+    }
+
 
 
     void printl() {

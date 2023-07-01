@@ -1,9 +1,9 @@
 package bridgelabz.linkedlist;
-//Ability to delete the first
+//Ability to delete the last
 //element in the LinkedList
-//of sequence 56->30->70 - Write pop method
-//- Note there is new head
-//- Final Sequence: 30->70
+//of sequence 56->30->70 - Write popLast method
+//- Note there is new tail
+//- Final Sequence: 56->30
 public class RunLinkedList {
     public static void main(String[] args) {
         System.out.println("This is LinkedLink");
@@ -12,7 +12,8 @@ public class RunLinkedList {
         li.addlast(70);
         li.searchAndInsert(30,56);
         li.printl();
-        li.firstdeletenode();
+        System.out.println();
+        li.lastdeletenode();
         li.printl();
 
 
