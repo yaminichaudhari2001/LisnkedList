@@ -74,6 +74,20 @@ Node head;
 
     }
 
+        public void findNode(int serach){
+        Node temp = head;
+        while(temp!=null){
+            if(temp.number == serach){
+                System.out.println("Element " + serach + " is present in linked list");
+                return;
+            }
+            temp = temp.next;
+        }
+
+        System.out.println("Element " + serach + " is not present in linked list");
+
+    }
+
 
 
     void printl() {

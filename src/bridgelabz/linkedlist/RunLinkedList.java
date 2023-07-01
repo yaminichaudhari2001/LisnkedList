@@ -1,9 +1,11 @@
 package bridgelabz.linkedlist;
-//Ability to delete the last
-//element in the LinkedList
-//of sequence 56->30->70 - Write popLast method
-//- Note there is new tail
-//- Final Sequence: 56->30
+//Ability to search
+//LinkedList to find Node
+//with value 30
+//- Write Junit Test Case as
+//demonstrated in class
+//- Loop through LinkedList to
+//find node with key 30
 public class RunLinkedList {
     public static void main(String[] args) {
         System.out.println("This is LinkedLink");
@@ -15,6 +17,9 @@ public class RunLinkedList {
         System.out.println();
         li.lastdeletenode();
         li.printl();
+        System.out.println();
+        li.findNode(30);
+        li.findNode(70);
 
 
     }
