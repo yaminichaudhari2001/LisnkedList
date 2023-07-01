@@ -16,6 +16,7 @@ Node head;
         Node newnode = new Node(data);
         if (head == null) {
             head = newnode;
+            return;
         }
         Node temp = head;
         while (temp.next != null) {
@@ -23,6 +24,24 @@ Node head;
         }
         temp.next = newnode;
     }
+    public void searchAndInsert(int number, int search){
+        Node temp= head;
+        Node newNode = new Node(number);
+        if(head == null){
+            head = newNode;
+
+        } else {
+            while (temp.number != search && temp.next != null){
+                temp = temp.next;
+            }
+
+            newNode.next = temp.next;
+            temp.next = newNode;
+
+        }
+
+    }
+
 
     void printl() {
         Node temp = head;
