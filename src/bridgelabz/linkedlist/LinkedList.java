@@ -87,8 +87,7 @@ Node head;
         System.out.println("Element " + serach + " is not present in linked list");
 
     }
-
-
+   
 
     void printl() {
         Node temp = head;
