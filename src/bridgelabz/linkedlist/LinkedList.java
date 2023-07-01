@@ -41,6 +41,17 @@ Node head;
         }
 
     }
+    void firstdeletenode() {
+        if (head==null)
+        {
+            System.out.println("null");
+        }
+        int temp =head.number;
+        head=head.next;
+        System.out.println();
+        System.out.println(temp+" is deleted");
+
+    }
 
 
     void printl() {
