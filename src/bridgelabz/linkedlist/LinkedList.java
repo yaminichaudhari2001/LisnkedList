@@ -87,7 +87,30 @@ Node head;
         System.out.println("Element " + serach + " is not present in linked list");
 
     }
-   
+    public void searchAndDelete(int search){      // search and insert  UC4
+        Node temp = head;
+        Node prev = temp;
+        while(temp!=null){
+            if(temp.number == search) {
+                prev.next = temp.next;
+                temp.next = null;
+                return;
+            }
+            prev = temp;
+            temp=temp.next;
+        }
+        System.out.println("Element not found");
+    }
+    public void size(){         // size of the linkedList   UC9
+        int size = 0;
+        Node temp = head;
+        while(temp != null){
+            size++;
+            temp = temp.next;
+        }
+        System.out.println("Link list size is " + 3);
+    }
+
 
     void printl() {
         Node temp = head;
